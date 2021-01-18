@@ -88,7 +88,7 @@ public class ModRecipeProvider extends RecipeProvider {
     private void registerStoneCutterRecipes(Consumer<IFinishedRecipe> consumer) {
         SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(Items.WHITE_WOOL), Items.STRING, 4)
                 .addCriterion("has_item", hasItem(Items.WHITE_WOOL))
-                .build(consumer, "stonecutter_string");
+                .build(consumer, "string__stonecutter");
     }
 
     private void registerSmeltingRecipes(Consumer<IFinishedRecipe> consumer) {
@@ -109,7 +109,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 200,
                 IRecipeSerializer.SMOKING)
                 .addCriterion("has_item", hasItem(Items.COOKED_BEEF))
-                .build(consumer);
+                .build(consumer, "rotten_flesh__smoker");
 
     }
 

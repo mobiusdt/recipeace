@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:stonecutter_string"
+      "minecraft:rotten_flesh__smoker"
     ]
   },
   "criteria": {
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:white_wool"
+            "item": "minecraft:cooked_beef"
           }
         ]
       }
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:stonecutter_string"
+        "recipe": "minecraft:rotten_flesh__smoker"
       }
     }
   },
