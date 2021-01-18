@@ -2,6 +2,9 @@ package mobiusstudios.recipeace;
 
 import mobiusstudios.recipeace.setup.Registration;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -21,6 +24,8 @@ import java.util.stream.Collectors;
 @Mod(Recipeace.MOD_ID)
 public class Recipeace {
     public static final String MOD_ID = "recipeace";
+    public static final String MOD_NAME = "Recipeace";
+    public static final String MOD_PREFIX = MOD_ID + ":";
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
@@ -75,4 +80,11 @@ public class Recipeace {
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
+
+    public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(Items.CREEPER_HEAD);
+        }
+    };
 }

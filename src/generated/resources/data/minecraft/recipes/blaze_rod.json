@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "recipeace:gold_rod"
+  },
+  "result": "minecraft:blaze_rod",
+  "experience": 1.0,
+  "cookingtime": 100
+}

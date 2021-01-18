@@ -1,6 +1,6 @@
-package mobiusstudios.recipeace.data.client.items;
+package mobiusstudios.recipeace.setup;
 
-import mobiusstudios.recipeace.setup.Registration;
+import mobiusstudios.recipeace.data.client.items.GoldRod;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;

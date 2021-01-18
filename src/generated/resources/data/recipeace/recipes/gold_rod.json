@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "recipeace:blueprints/gold_rod",
+  "pattern": [
+    "  i",
+    " i ",
+    "i  "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "recipeace:gold_rod"
+  }
+}
