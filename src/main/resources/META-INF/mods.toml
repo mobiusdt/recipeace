@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/mobiusdt/recipeace/issues"
    displayName="ReciPeace"
    displayURL="https://github.com/mobiusdt/recipeace"
    #logoFile="recipeace.png" #optional
-   authors="MobiusDT"
+   authors="MobiusStudios"
    description='''
    Recipes and other tweaks for Peaceful mode.
    '''
