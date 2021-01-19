@@ -2,6 +2,7 @@ package mobiusstudios.recipeace.setup;
 
 import mobiusstudios.recipeace.Recipeace;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,10 +12,12 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class Registration {
     public static final DeferredRegister<Item> ITEMS = create(ForgeRegistries.ITEMS);
+    public static final DeferredRegister<GlobalLootModifierSerializer<?>> GLM = create(ForgeRegistries.LOOT_MODIFIER_SERIALIZERS);
 
     public static void register() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ITEMS.register(modEventBus);
+        GLM.register(modEventBus);
 
         ModItems.register();
     }
