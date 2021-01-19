@@ -18,7 +18,7 @@ public class BoneLootModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        return null;
+        return generatedLoot;
     }
 
     public static class Serializer extends GlobalLootModifierSerializer<BoneLootModifier> {
